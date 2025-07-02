@@ -10,6 +10,7 @@ import 'screens/chart_screen.dart';
 import 'screens/tips_screen.dart';
 import 'screens/about_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/gemini_chat_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -52,6 +53,7 @@ class WasteClassifierApp extends StatelessWidget {
               '/tips': (_) => const TipsScreen(),
               '/about': (_) => const AboutScreen(),
               '/settings': (_) => const SettingsScreen(),
+              '/aichat': (_) => const GeminiChatScreen(),
             },
           );
         },

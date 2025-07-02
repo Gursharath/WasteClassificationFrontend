@@ -372,6 +372,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     },
                     gradientColors: [Color(0xFF667eea), Color(0xFF764ba2)],
                   ),
+                  _buildDrawerItem(
+                    context,
+                    icon: Icons.chat_outlined,
+                    activeIcon: Icons.chat,
+                    title: "AI Assistant",
+                    subtitle: "Have a chat with AI",
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.pushNamed(context, "/aichat");
+                    },
+                    gradientColors: [Color(0xFF667eea), Color(0xFF764ba2)],
+                  ),
 
                   _buildDrawerItem(
                     context,
